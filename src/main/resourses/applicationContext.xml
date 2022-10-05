@@ -13,8 +13,8 @@
           class="alishev.spring.core.ClassicalMusic">
     </bean>
     <bean id="musicPlayer"
-          class="alishev.spring.core.MusicPlayer">
-        <!--        <constructor-arg ref="musicBean"/>-->
+          class="alishev.spring.core.MusicPlayer"
+        scope="prototype">
         <property name="music" ref="musicBean"/>
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
