@@ -1,15 +1,18 @@
 package alishev.spring.core;
 
+import org.springframework.stereotype.Component;
+
+
 public class MusicPlayer {
     private Music music;
     private String name;
     private int volume;
 
-    //IoC
-    //kaxvacutyun enq nerarkum konstruktori mijocov
-//    public MusicPlayer(Music music) {
-//        this.music = music;
-//    }
+//    IoC
+//    kaxvacutyun enq nerarkum konstruktori mijocov
+    public MusicPlayer(Music music) {
+        this.music = music;
+    }
 //    public MusicPlayer(){}
     //kaxvacutyun enq nerarkum Set methodi mijocov
     public void setMusic(Music music) {
